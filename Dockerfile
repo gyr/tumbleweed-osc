@@ -1,5 +1,5 @@
 # Define the names/tags of the container
-#!BuildTag: tumbleweed-osc:latest
+#!BuildTag: distrobox-osc:latest
 
 FROM opensuse/tumbleweed:latest
 
@@ -17,11 +17,13 @@ RUN set -euo pipefail; \
     && zypper --gpg-auto-import-keys refresh  --force --force-build --force-download --services \
     && zypper --non-interactive install --force-resolution -fy \
     bat \
+    bc \
     bind-utils \
     build \
     ca-certificates-suse \
     curl \
     difftastic \
+    diffutils \
     dos2unix \
     entr \
     fd \
@@ -36,6 +38,7 @@ RUN set -euo pipefail; \
     iputils \
     jq \
     libcurl4 \
+    libvte-2_91-0 \
     lnav \
     lua-language-server \
     lua54-luacheck \
@@ -73,14 +76,18 @@ RUN set -euo pipefail; \
     ShellCheck \
     StyLua \
     shfmt \
+    shadow \
     sle-prjmgr-tools \
     sshfs \
+    sudo \
+    systemd \
     sysuser-shadow \
     tealdeer \
     tealdeer-bash-completion \
     tig \
     tig-bash-completion \
     tmux \
+    util-linux \
     uv-bash-completion \
     vgrep \
     vim \
