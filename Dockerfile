@@ -1,5 +1,5 @@
 # Define the names/tags of the container
-#!BuildTag: tumbleweed-osc:latest
+#!BuildTag: toolbox-osc:latest
 
 FROM opensuse/tumbleweed:latest
 
@@ -73,6 +73,7 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     shfmt \
     sle-prjmgr-tools \
     sshfs \
+    sudo \
     sysuser-shadow \
     tealdeer \
     tealdeer-bash-completion \
