@@ -38,5 +38,6 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     tmux \
     vgrep \
     vim \
+    vim-data \
     wget \
     && zypper clean -a
