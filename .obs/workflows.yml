@@ -2,6 +2,6 @@ obs_workflow:
   steps:
     - trigger_services:
         project: home:gyribeiro:containers
-        package: tumbleweed-osc
+        package: toolbox-osc
   filters:
     event: push

@@ -1,5 +1,5 @@
 # Define the names/tags of the container
-#!BuildTag: tumbleweed-osc:latest
+#!BuildTag: toolbox-osc:latest
 
 FROM opensuse/tumbleweed:latest
 
@@ -75,6 +75,7 @@ RUN set -euo pipefail; \
     shfmt \
     sle-prjmgr-tools \
     sshfs \
+    sudo \
     sysuser-shadow \
     tealdeer \
     tealdeer-bash-completion \
