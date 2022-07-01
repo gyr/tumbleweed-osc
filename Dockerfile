@@ -1,5 +1,5 @@
 # Define the names/tags of the container
-#!BuildTag: tumbleweed-osc:latest
+#!BuildTag: distrobox-osc:latest
 
 FROM opensuse/tumbleweed:latest
 
@@ -16,11 +16,13 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     && zypper --gpg-auto-import-keys refresh  --force --force-build --force-download --services \
     && zypper --non-interactive in --force-resolution -fy \
     bat \
+    bc \
     bind-utils \
     build \
     ca-certificates-suse \
     curl \
     difftastic \
+    diffutils \
     dos2unix \
     entr \
     fd \
@@ -33,6 +35,7 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     gnu_parallel \
     iputils \
     jq \
+    libvte-2_91-0 \
     lnav \
     lua-language-server \
     lua54-luacheck \
@@ -68,12 +71,16 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     ShellCheck \
     StyLua \
     shfmt \
+    shadow \
     sle-prjmgr-tools \
     sshfs \
+    sudo \
+    systemd \
     sysuser-shadow \
     tealdeer \
     tig \
     tmux \
+    util-linux \
     vgrep \
     vim \
     vim-data \
