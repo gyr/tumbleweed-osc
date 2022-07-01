@@ -20,6 +20,7 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     bind-utils \
     build \
     ca-certificates-suse \
+    cpio \
     curl \
     difftastic \
     diffutils \
@@ -43,26 +44,19 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     mkisofs \
     ncdu \
     neovim \
+    obs-service-obs_scm \
+    obs-service-recompress \
+    obs-service-set_version \
     obs-service-source_validator \
+    obs-service-tar \
     osc \
     osc-plugin-staging \
     perl-Perl-Critic \
     perl-Perl-Tidy \
-    python313-bashate \
-    python313-beautifulsoup4 \
-    python313-black \
-    python313-lupa \
-    python313-mypy \
-    python313-pylint \
-    python313-pyright \
-    python313-python-dotenv \
-    python313-python-lsp-server \
-    python313-python-lsp-server-all \
+    python311-packaging \
     python313-rpmfile \
-    python313-ruff \
     python313-solv \
     python313-uv \
-    python313-yamllint \
     ripgrep \
     rpm-build \
     rpmlint \
