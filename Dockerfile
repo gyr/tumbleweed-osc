@@ -18,6 +18,7 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     bc \
     build \
     ca-certificates-suse \
+    cpio \
     curl \
     diffutils \
     dos2unix \
@@ -32,9 +33,14 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     lnav \
     mktemp \
     ncdu \
+    obs-service-obs_scm \
+    obs-service-recompress \
+    obs-service-set_version \
     obs-service-source_validator \
+    obs-service-tar \
     osc \
     osc-plugin-staging \
+    python310-packaging \
     ripgrep \
     rsync \
     shadow \
