@@ -7,7 +7,6 @@ FROM opensuse/tumbleweed:latest
 # labelprefix=org.opensuse.example
 PREFIXEDLABEL org.opencontainers.image.title="Tools + osc + Tumbleweed Container"
 PREFIXEDLABEL org.opencontainers.image.description="Tumbleweed container base with tools to manage OBS/IBS releases"
-#PREFIXEDLABEL org.opensuse.reference="registry.opensuse.org/opensuse/example:%PKG_VERSION%.%RELEASE%"
 PREFIXEDLABEL org.openbuildservice.disturl="%DISTURL%"
 PREFIXEDLABEL org.opencontainers.image.created="%BUILDTIME%"
 
@@ -41,4 +40,3 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     vim \
     wget \
     && zypper clean -a
-#    && zypper --gpg-auto-import-keys refresh -fdb
