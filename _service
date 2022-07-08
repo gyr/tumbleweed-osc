@@ -4,7 +4,7 @@
   <service name="obs_scm">
     <param name="scm">git</param>
     <param name="url">https://github.com/gyr/tumbleweed-osc.git</param>
-    <param name="revision">master</param>
+    <param name="revision">toolbox</param>
     <param name="extract">Dockerfile</param>
   </service>
 </services>
