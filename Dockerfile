@@ -29,6 +29,7 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     lnav \
     mktemp \
     ncdu \
+    obs-service-source_validator \
     osc \
     osc-plugin-staging \
     ripgrep \

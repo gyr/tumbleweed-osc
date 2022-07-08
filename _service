@@ -1,0 +1,11 @@
+<services>
+  <service mode="buildtime" name="kiwi_metainfo_helper"/>
+  <service mode="buildtime" name="docker_label_helper"/>
+  <service name="obs_scm">
+    <param name="scm">git</param>
+    <param name="url">https://github.com/gyr/tumbleweed-osc.git</param>
+    <param name="revision">master</param>
+    <param name="extract">Dockerfile</param>
+  </service>
+</services>
+
