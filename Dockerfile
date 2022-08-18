@@ -12,7 +12,7 @@ PREFIXEDLABEL org.opencontainers.image.created="%BUILDTIME%"
 
 RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/repositories/openSUSE:/Tools/openSUSE_Tumbleweed openSUSE:Tools \
     && zypper --non-interactive addrepo --refresh https://download.opensuse.org/repositories/openSUSE:/infrastructure/openSUSE_Tumbleweed openSUSE:infrastructure \
-    && zypper --gpg-auto-import-keys refresh \
+    && zypper --gpg-auto-import-keys refresh  --force --force-build --force-download --services \
     && zypper --non-interactive in --no-recommends --force-resolution -fy \
     bat \
     build \
