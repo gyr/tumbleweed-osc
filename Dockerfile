@@ -5,10 +5,10 @@ FROM opensuse/tumbleweed:latest
 
 # Define labels according to https://en.opensuse.org/Building_derived_containers
 # labelprefix=org.opensuse.example
-PREFIXEDLABEL org.opencontainers.image.title="Tools + osc + Tumbleweed Container"
-PREFIXEDLABEL org.opencontainers.image.description="Tumbleweed container base with tools to manage OBS/IBS releases"
-PREFIXEDLABEL org.openbuildservice.disturl="%DISTURL%"
-PREFIXEDLABEL org.opencontainers.image.created="%BUILDTIME%"
+PREFIXEDLABEL org.opensuse.base.title="Tools + osc + Tumbleweed Container"
+PREFIXEDLABEL org.opensuse.base.description="Tumbleweed container base with tools to manage OBS/IBS releases"
+PREFIXEDLABEL org.opensuse.base.disturl="%DISTURL%"
+PREFIXEDLABEL org.opensuse.base.created="%BUILDTIME%"
 
 RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/repositories/openSUSE:/Tools/openSUSE_Tumbleweed openSUSE:Tools \
     && zypper --non-interactive addrepo --refresh https://download.opensuse.org/repositories/openSUSE:/infrastructure/openSUSE_Tumbleweed openSUSE:infrastructure \
