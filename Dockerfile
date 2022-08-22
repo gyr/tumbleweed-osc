@@ -33,6 +33,7 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     osc \
     osc-plugin-staging \
     ripgrep \
+    rpm-build \
     rsync \
     tealdeer \
     tig \
