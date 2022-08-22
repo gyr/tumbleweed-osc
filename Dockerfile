@@ -22,6 +22,7 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     fd \
     fzf \
     fzf-bash-completion \
+    gdb \
     git \
     git-delta \
     gnu_parallel \
