@@ -37,6 +37,7 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     ripgrep \
     rpm-build \
     rsync \
+    sle-prjmgr-tools \
     tealdeer \
     tig \
     tmux \
