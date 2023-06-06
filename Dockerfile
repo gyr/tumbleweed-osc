@@ -28,6 +28,7 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     git-delta \
     gnu_parallel \
     iputils \
+    jq \
     lnav \
     mktemp \
     ncdu \
@@ -48,4 +49,5 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     vim \
     vim-data \
     wget \
+    yq \
     && zypper clean -a
