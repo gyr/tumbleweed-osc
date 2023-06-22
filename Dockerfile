@@ -35,9 +35,9 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     obs-service-source_validator \
     osc \
     osc-plugin-staging \
-    python310-black \
-    python310-pylint \
-    python310-rpmfile \
+    python311-black \
+    python311-pylint \
+    python311-rpmfile \
     ripgrep \
     rpm-build \
     rsync \
