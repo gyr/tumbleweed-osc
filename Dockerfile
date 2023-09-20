@@ -1,7 +1,7 @@
 # Define the names/tags of the container
 #!BuildTag: distrobox-osc:latest
 
-FROM opensuse/tumbleweed:latest
+FROM opensuse/distrobox:latest
 
 # Define labels according to https://en.opensuse.org/Building_derived_containers
 # labelprefix=org.opensuse.example
