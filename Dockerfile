@@ -36,6 +36,7 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     mktemp \
     ncdu \
     obs-service-source_validator \
+    openssh-clients \
     osc \
     osc-plugin-staging \
     python3-solv \
