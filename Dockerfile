@@ -46,6 +46,7 @@ RUN set -euo pipefail; \
     ncdu \
     neovim \
     obs-service-source_validator \
+    openssh-clients \
     osc \
     osc-plugin-staging \
     perl-Perl-Critic \
