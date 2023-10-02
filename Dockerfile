@@ -44,6 +44,7 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     ncdu \
     neovim \
     obs-service-source_validator \
+    openssh-clients \
     osc \
     osc-plugin-staging \
     perl-Perl-Critic \
