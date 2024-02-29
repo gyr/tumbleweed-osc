@@ -41,6 +41,8 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     lua54-luacheck \
     mktemp \
     ncdu \
+    obs-service-download_files \
+    obs-service-format_spec_file \
     obs-service-obs_scm \
     obs-service-recompress \
     obs-service-set_version \
