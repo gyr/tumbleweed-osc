@@ -38,6 +38,7 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     iputils \
     jq \
     libcurl4 \
+    libsolv-tools \
     libvte-2_91-0 \
     lnav \
     lua-language-server \
