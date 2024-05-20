@@ -4,8 +4,10 @@
   <service name="obs_scm">
     <param name="scm">git</param>
     <param name="url">https://github.com/gyr/tumbleweed-osc.git</param>
-    <param name="revision">distrobox</param>
+    <param name="revision">distrobox-devel</param>
     <param name="extract">Dockerfile</param>
+    <param name="extract">requirements.txt</param>
+    <param name="extract">pyproject.toml</param>
   </service>
 </services>
 
