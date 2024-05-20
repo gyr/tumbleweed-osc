@@ -33,6 +33,7 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     gnu_parallel \
     iputils \
     jq \
+    libsolv-tools \
     libvte-2_91-0 \
     lnav \
     mktemp \
