@@ -39,6 +39,7 @@ RUN set -euo pipefail; \
     iputils \
     jq \
     libcurl4 \
+    libsolv-tools \
     libvte-2_91-0 \
     lnav \
     lua-language-server \
