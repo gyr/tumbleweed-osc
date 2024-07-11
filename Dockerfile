@@ -45,6 +45,7 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     rsync \
     sle-prjmgr-tools \
     sshfs \
+    sysuser-shadow \
     tealdeer \
     tig \
     tmux \
