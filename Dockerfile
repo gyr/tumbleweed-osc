@@ -20,6 +20,7 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     build \
     ca-certificates-suse \
     curl \
+    difftastic \
     dos2unix \
     fd \
     fzf \
