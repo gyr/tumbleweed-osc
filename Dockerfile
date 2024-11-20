@@ -22,6 +22,7 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     curl \
     difftastic \
     dos2unix \
+    entr \
     fd \
     fzf \
     fzf-bash-completion \
