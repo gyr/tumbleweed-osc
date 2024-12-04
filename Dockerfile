@@ -42,6 +42,7 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     python311-black \
     python311-pylint \
     python311-rpmfile \
+    python311-yamllint \
     ripgrep \
     rpm-build \
     rsync \
