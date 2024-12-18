@@ -33,12 +33,17 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     iputils \
     jq \
     lnav \
+    lua-language-server \
+    lua54-luacheck \
     mktemp \
     ncdu \
     obs-service-source_validator \
     osc \
     osc-plugin-staging \
+    perl-Perl-Critic \
+    perl-Perl-Tidy \
     python3-solv \
+    python311-bashate \
     python311-black \
     python311-pylint \
     python311-python-lsp-server \
@@ -47,7 +52,11 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     python311-yamllint \
     ripgrep \
     rpm-build \
+    rpmlint \
     rsync \
+    ShellCheck \
+    StyLua \
+    shfmt \
     sle-prjmgr-tools \
     sshfs \
     sysuser-shadow \
