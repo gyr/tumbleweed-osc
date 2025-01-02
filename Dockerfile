@@ -45,6 +45,7 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     python3-solv \
     python311-bashate \
     python311-black \
+    python311-mypy \
     python311-pylint \
     python311-python-lsp-server \
     python311-python-lsp-server-all \
