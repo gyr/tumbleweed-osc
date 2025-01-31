@@ -35,6 +35,7 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     lnav \
     lua-language-server \
     lua54-luacheck \
+    lua54-lyaml \
     mktemp \
     ncdu \
     obs-service-source_validator \
