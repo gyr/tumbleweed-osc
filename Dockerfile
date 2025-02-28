@@ -10,6 +10,8 @@ PREFIXEDLABEL org.opensuse.base.description="Tumbleweed container base with tool
 PREFIXEDLABEL org.opensuse.base.disturl="%DISTURL%"
 PREFIXEDLABEL org.opensuse.base.created="%BUILDTIME%"
 
+COPY requirements.txt .
+
 RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/repositories/openSUSE:/Tools/openSUSE_Tumbleweed openSUSE:Tools \
     && zypper --non-interactive addrepo --refresh https://download.opensuse.org/repositories/openSUSE:/infrastructure/openSUSE_Tumbleweed openSUSE:infrastructure \
     && zypper --non-interactive addrepo --refresh https://download.opensuse.org/repositories/SUSE:/CA/openSUSE_Tumbleweed SUSE:CA \
@@ -57,16 +59,7 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     osc-plugin-staging \
     perl-Perl-Critic \
     perl-Perl-Tidy \
-    python3-solv \
-    python311-bashate \
-    python311-black \
-    python311-mypy \
-    python311-packaging \
-    python311-pylint \
-    python311-python-lsp-server \
-    python311-python-lsp-server-all \
-    python311-rpmfile \
-    python311-yamllint \
+    python311-pip \
     ripgrep \
     rpm-build \
     rpmlint \
@@ -89,4 +82,7 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     vim-data \
     wget \
     yq \
-    && zypper clean -a
+    && zypper clean -a \
+    && python3 -m venv /opt/venv \
+    && /opt/venv/bin/pip install -r requirements.txt \
+    && rm requirements.txt

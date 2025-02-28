@@ -1,0 +1,12 @@
+bashate
+black
+flake8
+mypy
+packaging
+pylint
+pyright
+python-lsp-server
+solv
+vim-vint
+yamlfmt
+yamllint
