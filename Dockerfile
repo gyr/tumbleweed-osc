@@ -1,5 +1,5 @@
 # Define the names/tags of the container
-#!BuildTag: distrobox-osc:latest
+#!BuildTag: distrobox-osc-devel:latest
 
 FROM opensuse/distrobox:latest
 
@@ -9,6 +9,9 @@ PREFIXEDLABEL org.opensuse.base.title="Tools + osc + Tumbleweed Container"
 PREFIXEDLABEL org.opensuse.base.description="Tumbleweed container base with tools to manage OBS/IBS releases"
 PREFIXEDLABEL org.opensuse.base.disturl="%DISTURL%"
 PREFIXEDLABEL org.opensuse.base.created="%BUILDTIME%"
+
+COPY requirements.txt /opt/
+COPY pyproject.toml /opt/
 
 RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/repositories/openSUSE:/Tools/openSUSE_Tumbleweed openSUSE:Tools \
     && zypper --non-interactive addrepo --refresh https://download.opensuse.org/repositories/openSUSE:/infrastructure/openSUSE_Tumbleweed openSUSE:infrastructure \
@@ -57,7 +60,8 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     osc-plugin-staging \
     perl-Perl-Critic \
     perl-Perl-Tidy \
-    python311-packaging \
+    python313-packaging \
+    python313-pip \
     python313-rpmfile \
     python313-solv \
     python313-uv \

@@ -1,0 +1,14 @@
+bashate
+beautifulsoup4
+black
+flake8
+mypy
+packaging
+pylint
+pyright
+python-dotenv
+python-lsp-server
+ruff
+vim-vint
+yamlfmt
+yamllint
