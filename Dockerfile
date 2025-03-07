@@ -50,6 +50,7 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     python311-black \
     python311-mypy \
     python311-pylint \
+    python311-pyright \
     python311-python-lsp-server \
     python311-python-lsp-server-all \
     python311-rpmfile \
