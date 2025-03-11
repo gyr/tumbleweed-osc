@@ -46,15 +46,15 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     perl-Perl-Critic \
     perl-Perl-Tidy \
     python3-solv \
-    python311-bashate \
-    python311-black \
-    python311-mypy \
-    python311-pylint \
-    python311-pyright \
-    python311-python-lsp-server \
-    python311-python-lsp-server-all \
-    python311-rpmfile \
-    python311-yamllint \
+    python313-bashate \
+    python313-black \
+    python313-mypy \
+    python313-pylint \
+    python313-pyright \
+    python313-python-lsp-server \
+    python313-python-lsp-server-all \
+    python313-rpmfile \
+    python313-yamllint \
     ripgrep \
     rpm-build \
     rpmlint \
