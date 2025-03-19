@@ -47,10 +47,12 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     perl-Perl-Tidy \
     python3-solv \
     python313-bashate \
+    python313-beautifulsoup4 \
     python313-black \
     python313-mypy \
     python313-pylint \
     python313-pyright \
+    python313-python-dotenv \
     python313-python-lsp-server \
     python313-python-lsp-server-all \
     python313-rpmfile \
