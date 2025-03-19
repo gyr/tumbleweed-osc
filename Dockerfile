@@ -25,7 +25,7 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     entr \
     fd \
     fzf \
-    fzf-bash-completion \
+    fzf-bash-integration \
     gdb \
     git \
     git-delta \
@@ -37,7 +37,6 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     lua54-luacheck \
     lua54-lyaml \
     mkisofs \
-    mktemp \
     ncdu \
     neovim \
     obs-service-source_validator \
@@ -45,7 +44,6 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     osc-plugin-staging \
     perl-Perl-Critic \
     perl-Perl-Tidy \
-    python3-solv \
     python313-bashate \
     python313-beautifulsoup4 \
     python313-black \
@@ -56,6 +54,7 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     python313-python-lsp-server \
     python313-python-lsp-server-all \
     python313-rpmfile \
+    python313-solv \
     python313-yamllint \
     ripgrep \
     rpm-build \
