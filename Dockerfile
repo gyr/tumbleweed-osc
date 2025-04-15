@@ -56,7 +56,9 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     python313-python-lsp-server \
     python313-python-lsp-server-all \
     python313-rpmfile \
+    python313-ruff \
     python313-solv \
+    python313-uv \
     python313-yamllint \
     ripgrep \
     rpm-build \
