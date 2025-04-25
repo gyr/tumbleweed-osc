@@ -78,4 +78,5 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     vim-data \
     wget \
     yq \
+    zoxide \
     && zypper clean -a
