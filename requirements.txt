@@ -10,6 +10,7 @@ pylint
 pyright
 python-dotenv
 python-lsp-server
+rich
 ruff
 vim-vint
 yamlfmt
