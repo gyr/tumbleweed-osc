@@ -41,6 +41,8 @@ RUN set -euo pipefail; \
     gitea-tea \
     gitea-tea-bash-completion \
     gnu_parallel \
+    go \
+    golangci-lint \
     iputils \
     jq \
     libcurl4 \
