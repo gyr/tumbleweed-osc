@@ -40,6 +40,8 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     gitea-tea \
     gitea-tea-bash-completion \
     gnu_parallel \
+    go \
+    golangci-lint \
     iputils \
     jq \
     libcurl4 \
