@@ -36,6 +36,8 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     git \
     git-delta \
     gnu_parallel \
+    go \
+    golangci-lint \
     iputils \
     jq \
     libsolv-tools \
