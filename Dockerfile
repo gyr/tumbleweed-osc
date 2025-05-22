@@ -37,6 +37,8 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     git-delta \
     git-lfs \
     gnu_parallel \
+    go \
+    golangci-lint \
     iputils \
     jq \
     libcurl4 \
