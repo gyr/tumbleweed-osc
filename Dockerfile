@@ -100,7 +100,7 @@ RUN set -euo pipefail; \
     vgrep \
     vim \
     vim-data \
-    wget \
+    wcurl \
     yq \
     yq-bash-completion \
     zoxide
