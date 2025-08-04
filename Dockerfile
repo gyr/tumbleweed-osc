@@ -79,6 +79,7 @@ RUN set -euo pipefail; \
     rpm-build \
     rpmlint \
     rsync \
+    rustup \
     ShellCheck \
     StyLua \
     shfmt \
