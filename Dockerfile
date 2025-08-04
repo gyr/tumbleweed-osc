@@ -78,6 +78,7 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     rpm-build \
     rpmlint \
     rsync \
+    rustup \
     ShellCheck \
     StyLua \
     shfmt \
