@@ -97,7 +97,7 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     vgrep \
     vim \
     vim-data \
-    wget \
+    wcurl \
     yq \
     yq-bash-completion \
     zoxide \
