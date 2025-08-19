@@ -50,6 +50,7 @@ RUN set -euo pipefail; \
     mkisofs \
     ncdu \
     neovim \
+    obs-git-init \
     obs-service-download_files \
     obs-service-format_spec_file \
     obs-service-obs_scm \
