@@ -80,3 +80,4 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     yq \
     zoxide \
     && zypper clean -a
+# foo
