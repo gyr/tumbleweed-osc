@@ -29,6 +29,7 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     gdb \
     git \
     git-delta \
+    git-lfs \
     gnu_parallel \
     iputils \
     jq \
