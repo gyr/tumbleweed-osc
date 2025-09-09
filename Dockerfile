@@ -33,6 +33,7 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     gnu_parallel \
     iputils \
     jq \
+    libcurl4 \
     lnav \
     lua-language-server \
     lua54-luacheck \
