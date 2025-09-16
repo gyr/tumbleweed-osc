@@ -34,6 +34,8 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     git \
     git-delta \
     git-lfs \
+    gitea-tea \
+    gitea-tea-bash-completion \
     gnu_parallel \
     iputils \
     jq \
