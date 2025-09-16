@@ -35,6 +35,8 @@ RUN set -euo pipefail; \
     git \
     git-delta \
     git-lfs \
+    gitea-tea \
+    gitea-tea-bash-completion \
     gnu_parallel \
     iputils \
     jq \
