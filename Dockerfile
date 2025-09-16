@@ -10,11 +10,12 @@ PREFIXEDLABEL org.opensuse.base.description="Tumbleweed container base with tool
 PREFIXEDLABEL org.opensuse.base.disturl="%DISTURL%"
 PREFIXEDLABEL org.opensuse.base.created="%BUILDTIME%"
 
-RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/repositories/openSUSE:/Tools/openSUSE_Tumbleweed openSUSE:Tools \
+RUN set -euo pipefail; \
+    zypper --non-interactive addrepo --refresh https://download.opensuse.org/repositories/openSUSE:/Tools/openSUSE_Tumbleweed openSUSE:Tools \
     && zypper --non-interactive addrepo --refresh https://download.opensuse.org/repositories/openSUSE:/infrastructure/openSUSE_Tumbleweed openSUSE:infrastructure \
     && zypper --non-interactive addrepo --refresh https://download.opensuse.org/repositories/SUSE:/CA/openSUSE_Tumbleweed SUSE:CA \
     && zypper --gpg-auto-import-keys refresh  --force --force-build --force-download --services \
-    && zypper --non-interactive in --force-resolution -fy \
+    && zypper --non-interactive install --force-resolution -fy \
     bat \
     bind-utils \
     build \
@@ -86,5 +87,13 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     wget \
     yq \
     yq-bash-completion \
-    zoxide \
-    && zypper clean -a
+    zoxide
+
+# cleanup logs and temporary files
+RUN set -euo pipefail; zypper -n clean -a; \
+    rm -rf {/target,}/var/log/{alternatives.log,lastlog,tallylog,zypper.log,zypp/history,YaST2}; \
+    rm -rf {/target,}/run/*; \
+    rm -f {/target,}/etc/{shadow-,group-,passwd-,.pwd.lock}; \
+    rm -f {/target,}/usr/lib/sysimage/rpm/.rpm.lock; \
+    rm -f {/target,}/var/cache/ldconfig/aux-cache; \
+    command -v zypper >/dev/null 2>&1 || rm -f /var/lib/zypp/AutoInstalled
