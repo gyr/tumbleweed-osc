@@ -24,6 +24,7 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     dos2unix \
     entr \
     fd \
+    fd-bash-completion \
     fzf \
     fzf-bash-integration \
     gdb \
@@ -63,6 +64,7 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     python313-uv \
     python313-yamllint \
     ripgrep \
+    ripgrep-bash-completion \
     rpm-build \
     rpmlint \
     rsync \
@@ -73,12 +75,16 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     sshfs \
     sysuser-shadow \
     tealdeer \
+    tealdeer-bash-completion \
     tig \
+    tig-bash-completion \
     tmux \
+    uv-bash-completion \
     vgrep \
     vim \
     vim-data \
     wget \
     yq \
+    yq-bash-completion \
     zoxide \
     && zypper clean -a
