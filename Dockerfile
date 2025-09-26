@@ -55,6 +55,7 @@ RUN zypper --non-interactive addrepo --refresh https://download.opensuse.org/rep
     mkisofs \
     ncdu \
     neovim \
+    npm \
     obs-git-init \
     obs-service-download_files \
     obs-service-format_spec_file \
