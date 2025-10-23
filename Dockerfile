@@ -44,6 +44,7 @@ RUN set -euo pipefail; \
     go \
     golangci-lint \
     gopass \
+    gopls \
     iputils \
     jq \
     libcurl4 \
