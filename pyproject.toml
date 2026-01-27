@@ -1,0 +1,24 @@
+[project]
+name = "sle-virtual-env"
+version = "0.1.0"
+description = "Virtual environment for SLE RelMgmnt tools"
+readme = "README.md"
+authors = [
+    { name = "Gustavo Yokoyama Ribeiro", email = "gyribeiro at suse dot com" },
+]
+maintainers = [
+    { name = "Gustavo Yokoyama Ribeiro", email = "gyribeiro at suse dot com" },
+]
+dependencies = [
+    "bashate",
+    "black",
+    "flake8",
+    "mypy",
+    "pylint",
+    "pyright",
+    "python-lsp-server",
+    "ruff",
+    "vim-vint",
+    "yamlfmt",
+    "yamllint",
+]

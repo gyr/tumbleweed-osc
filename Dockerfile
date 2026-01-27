@@ -1,5 +1,5 @@
 # Define the names/tags of the container
-#!BuildTag: toolbox-osc:latest
+#!BuildTag: toolbox-osc-devel:latest
 
 FROM opensuse/tumbleweed:latest
 
@@ -10,6 +10,9 @@ PREFIXEDLABEL org.opensuse.base.description="Tumbleweed container base with tool
 PREFIXEDLABEL org.opensuse.base.disturl="%DISTURL%"
 PREFIXEDLABEL org.opensuse.base.created="%BUILDTIME%"
 
+COPY requirements.txt /opt/
+COPY pyproject.toml /opt/
+
 RUN set -euo pipefail; \
     zypper --non-interactive addrepo --refresh https://download.opensuse.org/repositories/openSUSE:/Tools/openSUSE_Tumbleweed openSUSE:Tools \
     && zypper --non-interactive addrepo --refresh https://download.opensuse.org/repositories/openSUSE:/infrastructure/openSUSE_Tumbleweed openSUSE:infrastructure \
@@ -17,11 +20,14 @@ RUN set -euo pipefail; \
     && zypper --gpg-auto-import-keys refresh  --force --force-build --force-download --services \
     && zypper --non-interactive install --force-resolution -fy \
     bat \
+    bc \
     bind-utils \
     build \
     ca-certificates-suse \
+    cpio \
     curl \
     difftastic \
+    diffutils \
     dos2unix \
     entr \
     fd \
@@ -32,7 +38,12 @@ RUN set -euo pipefail; \
     git \
     git-delta \
     git-lfs \
+    gitea-tea \
+    gitea-tea-bash-completion \
     gnu_parallel \
+    go \
+    golangci-lint \
+    gopls \
     iputils \
     jq \
     libcurl4 \
@@ -45,32 +56,33 @@ RUN set -euo pipefail; \
     mkisofs \
     ncdu \
     neovim \
+    npm \
+    obs-git-init \
+    obs-service-download_files \
+    obs-service-format_spec_file \
+    obs-service-kiwi_metainfo_helper \
+    obs-service-obs_scm \
+    obs-service-product_converter \
+    obs-service-recompress \
+    obs-service-set_version \
     obs-service-source_validator \
+    obs-service-tar \
     openssh-clients \
     osc \
     osc-plugin-staging \
     perl-Perl-Critic \
     perl-Perl-Tidy \
-    python313-bashate \
-    python313-beautifulsoup4 \
-    python313-black \
-    python313-lupa \
-    python313-mypy \
-    python313-pylint \
-    python313-pyright \
-    python313-python-dotenv \
-    python313-python-lsp-server \
-    python313-python-lsp-server-all \
+    python313-packaging \
+    python313-pip \
     python313-rpmfile \
-    python313-ruff \
     python313-solv \
     python313-uv \
-    python313-yamllint \
     ripgrep \
     ripgrep-bash-completion \
     rpm-build \
     rpmlint \
     rsync \
+    rustup \
     ShellCheck \
     StyLua \
     shfmt \
@@ -87,7 +99,8 @@ RUN set -euo pipefail; \
     vgrep \
     vim \
     vim-data \
-    wget \
+    wcurl \
+    yazi \
     yq \
     yq-bash-completion \
     zoxide

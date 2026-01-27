@@ -1,0 +1,17 @@
+argcomplete
+bashate
+beautifulsoup4
+black
+flake8
+lupa
+lxml
+mypy
+pylint
+pyright
+python-dotenv
+python-lsp-server
+rich
+ruff
+vim-vint
+yamlfmt
+yamllint
