@@ -2,6 +2,6 @@ obs_workflow:
   steps:
     - trigger_services:
         project: home:gyribeiro:containers
-        package: toolbox-osc
+        package: toolbox-osc-devel
   filters:
     event: push
