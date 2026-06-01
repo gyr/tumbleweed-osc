@@ -41,6 +41,7 @@ RUN set -euo pipefail; \
     lua54-luacheck \
     lua54-lyaml \
     luajit \
+    luajit-lpeg \
     mkisofs \
     ncdu \
     neovim \
