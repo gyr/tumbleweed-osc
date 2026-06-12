@@ -20,6 +20,7 @@ RUN set -euo pipefail; \
     && zypper --gpg-auto-import-keys refresh  --force --force-build --force-download --services \
     && zypper --non-interactive install --force-resolution -fy \
     bat \
+    bats \
     bc \
     bind-utils \
     build \
