@@ -33,6 +33,7 @@ RUN set -euo pipefail; \
     git-delta \
     git-lfs \
     gnu_parallel \
+    gopass \
     iputils \
     jq \
     libcurl4 \
