@@ -63,8 +63,6 @@ RUN set -euo pipefail; \
     sle-prjmgr-tools \
     sshfs \
     sysuser-shadow \
-    tealdeer \
-    tealdeer-bash-completion \
     tig \
     tig-bash-completion \
     tmux \
@@ -73,6 +71,8 @@ RUN set -euo pipefail; \
     vim \
     vim-data \
     wget \
+    yazi \
+    yazi-bash-completion \
     yq \
     yq-bash-completion \
     zoxide
