@@ -101,7 +101,9 @@ RUN set -euo pipefail; \
     vim \
     vim-data \
     wcurl \
+    wget \
     yazi \
+    yazi-bash-completion \
     yq \
     yq-bash-completion \
     zoxide
