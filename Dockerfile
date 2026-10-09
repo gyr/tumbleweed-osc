@@ -66,6 +66,8 @@ RUN set -euo pipefail; \
     osc-plugin-staging \
     perl-Perl-Critic \
     perl-Perl-Tidy \
+    python313-rpm \
+    python313-solv \
     python313-uv \
     ripgrep \
     ripgrep-bash-completion \
